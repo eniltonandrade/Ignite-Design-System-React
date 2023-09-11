@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react'
 import { styled } from '../styles'
 
-export const StyledTextArea = styled('textarea', {
+export const TextArea = styled('textarea', {
   backgroundColor: '$gray900',
   padding: '$3 $4',
   borderRadius: '$sm',
@@ -31,8 +31,6 @@ export const StyledTextArea = styled('textarea', {
 })
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface TextAreaProps extends ComponentProps<typeof StyledTextArea> {}
+export interface TextAreaProps extends ComponentProps<typeof TextArea> {}
 
-export function TextArea(props: TextAreaProps) {
-  return <StyledTextArea {...props}></StyledTextArea>
-}
+TextArea.displayName = 'TextArea'
