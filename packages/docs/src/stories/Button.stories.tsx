@@ -5,6 +5,33 @@ import { ArrowRight } from 'phosphor-react'
 const meta: Meta<typeof Button> = {
   title: 'Form/Button',
   component: Button,
+  args: {
+    variant: 'primary',
+    size: 'md',
+    disabled: false,
+  },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'terciary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    onClick: {
+      action: 'click',
+    },
+  },
 }
 
 type Story = StoryObj<typeof Button>

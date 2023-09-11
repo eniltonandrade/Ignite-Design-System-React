@@ -9,6 +9,13 @@ const meta: Meta<typeof Avatar> = {
     src: 'https://github.com/eniltonandrade.png',
     alt: 'Enilton Andrade',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 }
 
 export default meta

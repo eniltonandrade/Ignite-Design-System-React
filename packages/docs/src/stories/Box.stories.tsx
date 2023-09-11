@@ -7,6 +7,13 @@ const meta: Meta<typeof Box> = {
   args: {
     children: <Text>Testando o Elemento Box</Text>,
   },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 }
 
 type Story = StoryObj<typeof Box>
