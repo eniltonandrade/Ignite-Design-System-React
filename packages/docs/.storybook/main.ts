@@ -25,5 +25,12 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/Ignite-Design-System-React/'
+    }
+
+    return config
+  }
 };
 export default config;
