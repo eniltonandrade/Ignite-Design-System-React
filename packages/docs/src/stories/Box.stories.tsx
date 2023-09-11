@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text } from '@ignite-ui/react'
+import { Box, Text } from '@ea-ignite-ui/react'
 
 const meta: Meta<typeof Box> = {
   title: 'Surfaces/Box',
